@@ -19,7 +19,7 @@ class GameScene: SKScene {
         self.addChild(background1)
         
         background2.anchorPoint = CGPointZero
-        background2.position = CGPointMake(0, background1.size.width)
+        background2.position = CGPointMake(background1.size.width, 0)
         background2.zPosition = -15
         self.addChild(background2)
     }
@@ -39,7 +39,7 @@ class GameScene: SKScene {
             background1.position = CGPointMake(background2.position.x + background2.size.width, background1.position.y)
         }
         
-        if(background2.position.y < -background2.size.width)
+        if(background2.position.x < -background2.size.width)
         {
             background2.position = CGPointMake(background1.position.x + background1.size.width, background2.position.y)
             

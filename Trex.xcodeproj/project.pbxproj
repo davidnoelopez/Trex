@@ -15,8 +15,8 @@
 		63C2D62D1B479293004865CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D62C1B479293004865CB /* Images.xcassets */; };
 		63C2D6301B479293004865CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D62E1B479293004865CB /* LaunchScreen.xib */; };
 		63C2D63C1B479293004865CB /* TrexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2D63B1B479293004865CB /* TrexTests.swift */; };
-		63C2D64C1B47A53F004865CB /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64A1B47A53F004865CB /* bg1.png */; };
-		63C2D64D1B47A53F004865CB /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64B1B47A53F004865CB /* bg2.png */; };
+		63C2D6501B47A982004865CB /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64E1B47A982004865CB /* bg1.png */; };
+		63C2D6511B47A982004865CB /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64F1B47A982004865CB /* bg2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		63C2D6351B479293004865CB /* TrexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C2D63A1B479293004865CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63C2D63B1B479293004865CB /* TrexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrexTests.swift; sourceTree = "<group>"; };
-		63C2D64A1B47A53F004865CB /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
-		63C2D64B1B47A53F004865CB /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		63C2D64E1B47A982004865CB /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		63C2D64F1B47A982004865CB /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		63C2D6451B479D96004865CB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				63C2D64A1B47A53F004865CB /* bg1.png */,
-				63C2D64B1B47A53F004865CB /* bg2.png */,
+				63C2D64E1B47A982004865CB /* bg1.png */,
+				63C2D64F1B47A982004865CB /* bg2.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -215,9 +215,9 @@
 				63C2D6301B479293004865CB /* LaunchScreen.xib in Resources */,
 				63C2D62D1B479293004865CB /* Images.xcassets in Resources */,
 				63C2D6241B479293004865CB /* GameScene.sks in Resources */,
-				63C2D64D1B47A53F004865CB /* bg2.png in Resources */,
+				63C2D6511B47A982004865CB /* bg2.png in Resources */,
 				63C2D62B1B479293004865CB /* Main.storyboard in Resources */,
-				63C2D64C1B47A53F004865CB /* bg1.png in Resources */,
+				63C2D6501B47A982004865CB /* bg1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
