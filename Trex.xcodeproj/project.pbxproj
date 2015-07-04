@@ -18,7 +18,7 @@
 		63C2D6501B47A982004865CB /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64E1B47A982004865CB /* bg1.png */; };
 		63C2D6511B47A982004865CB /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64F1B47A982004865CB /* bg2.png */; };
 		63C2D6531B47AAF4004865CB /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D6521B47AAF4004865CB /* man.png */; };
-		63C2D6551B47B2C5004865CB /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2D6541B47B2C5004865CB /* Hero.swift */; };
+		FCBB37231B47B79A00091E75 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBB37221B47B79A00091E75 /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		63C2D64E1B47A982004865CB /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		63C2D64F1B47A982004865CB /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 		63C2D6521B47AAF4004865CB /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
-		63C2D6541B47B2C5004865CB /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		FCBB37221B47B79A00091E75 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../../Downloads/Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +133,7 @@
 			children = (
 				63C2D64E1B47A982004865CB /* bg1.png */,
 				63C2D64F1B47A982004865CB /* bg2.png */,
+				FCBB37221B47B79A00091E75 /* Logo.png */,
 				63C2D6521B47AAF4004865CB /* man.png */,
 			);
 			name = Images;
@@ -222,6 +223,7 @@
 				63C2D62D1B479293004865CB /* Images.xcassets in Resources */,
 				63C2D6241B479293004865CB /* GameScene.sks in Resources */,
 				63C2D6511B47A982004865CB /* bg2.png in Resources */,
+				FCBB37231B47B79A00091E75 /* Logo.png in Resources */,
 				63C2D62B1B479293004865CB /* Main.storyboard in Resources */,
 				63C2D6501B47A982004865CB /* bg1.png in Resources */,
 				63C2D6531B47AAF4004865CB /* man.png in Resources */,
@@ -441,6 +443,7 @@
 				63C2D6411B479293004865CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63C2D6421B479293004865CB /* Build configuration list for PBXNativeTarget "TrexTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +452,7 @@
 				63C2D6441B479293004865CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
