@@ -93,6 +93,7 @@
 				63C2D6211B479293004865CB /* AppDelegate.swift */,
 				63C2D6231B479293004865CB /* GameScene.sks */,
 				63C2D6251B479293004865CB /* GameScene.swift */,
+				63C2D6541B47B2C5004865CB /* Hero.swift */,
 				63C2D6271B479293004865CB /* GameViewController.swift */,
 				63C2D6291B479293004865CB /* Main.storyboard */,
 				63C2D62C1B479293004865CB /* Images.xcassets */,
@@ -246,6 +247,7 @@
 				63C2D6261B479293004865CB /* GameScene.swift in Sources */,
 				63C2D6281B479293004865CB /* GameViewController.swift in Sources */,
 				63C2D6221B479293004865CB /* AppDelegate.swift in Sources */,
+				63C2D6551B47B2C5004865CB /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

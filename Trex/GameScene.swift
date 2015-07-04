@@ -9,7 +9,7 @@
 import SpriteKit
 let background1 = SKSpriteNode(imageNamed: "bg1")
 let background2 = SKSpriteNode(imageNamed: "bg2")
-let hero = SKSpriteNode(imageNamed: "man")
+let hero = Hero(spriteName: "man")
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
@@ -24,24 +24,19 @@ class GameScene: SKScene {
         background2.zPosition = -15
         self.addChild(background2)
 
-        hero.anchorPoint = CGPointZero
-        hero.position = CGPointMake(70, 185)
-        hero.zPosition = 0
-        self.addChild(hero)
+        hero.sprite.anchorPoint = CGPointZero
+        hero.sprite.position = CGPointMake(70, 185)
+        hero.sprite.zPosition = 0
+        self.addChild(hero.sprite)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        let jumpUp = SKAction.moveToY(385, duration: 1)
 
-        hero.runAction(jumpUp, completion: { () -> Void in
-            let jumpDown = SKAction.moveToY(185, duration: 1)
-            hero.runAction(jumpDown)
-        })
+        hero.jump()
     }
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+
         self.moveBackground()
     }
 
