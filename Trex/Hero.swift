@@ -24,4 +24,5 @@ class Hero: NSObject {
             self.sprite.runAction(jumpDown)
         })
     }
+    
 }
