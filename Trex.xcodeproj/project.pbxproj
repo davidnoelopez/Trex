@@ -17,6 +17,7 @@
 		63C2D63C1B479293004865CB /* TrexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2D63B1B479293004865CB /* TrexTests.swift */; };
 		63C2D6501B47A982004865CB /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64E1B47A982004865CB /* bg1.png */; };
 		63C2D6511B47A982004865CB /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64F1B47A982004865CB /* bg2.png */; };
+		63C2D6531B47AAF4004865CB /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D6521B47AAF4004865CB /* man.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		63C2D63B1B479293004865CB /* TrexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrexTests.swift; sourceTree = "<group>"; };
 		63C2D64E1B47A982004865CB /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		63C2D64F1B47A982004865CB /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		63C2D6521B47AAF4004865CB /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				63C2D64E1B47A982004865CB /* bg1.png */,
 				63C2D64F1B47A982004865CB /* bg2.png */,
+				63C2D6521B47AAF4004865CB /* man.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				63C2D6511B47A982004865CB /* bg2.png in Resources */,
 				63C2D62B1B479293004865CB /* Main.storyboard in Resources */,
 				63C2D6501B47A982004865CB /* bg1.png in Resources */,
+				63C2D6531B47AAF4004865CB /* man.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
