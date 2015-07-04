@@ -31,17 +31,18 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        let jumpUp = SKAction.moveToY(385, duration: 1)
+
+        // Hero jumps.
+        let jumpUp = SKAction.moveToY(385, duration: 0.7)
 
         hero.runAction(jumpUp, completion: { () -> Void in
-            let jumpDown = SKAction.moveToY(185, duration: 1)
+            let jumpDown = SKAction.moveToY(185, duration: 0.5)
             hero.runAction(jumpDown)
         })
     }
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+
         self.moveBackground()
     }
 
