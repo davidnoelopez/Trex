@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SpriteKit
 
 class Obstacle: NSObject {
     var sprite: SKSpriteNode!
@@ -25,3 +24,4 @@ class Obstacle: NSObject {
 
 
 
+import SpriteKit

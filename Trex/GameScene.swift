@@ -29,6 +29,11 @@ class GameScene: SKScene {
         hero.sprite.position = CGPointMake(70, 185)
         hero.sprite.zPosition = 0
         self.addChild(hero.sprite)
+        
+        obstacle.sprite.anchorPoint = CGPointZero
+        obstacle.sprite.position = CGPointMake(800, 185)
+        obstacle.sprite.zPosition = 0
+        self.addChild(obstacle.sprite)
 
         let floor = Floor(kind: 1, location: CGPointMake(70, 70))
         self.addChild(floor.sprite)
