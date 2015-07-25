@@ -19,6 +19,7 @@
 		63C2D6511B47A982004865CB /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D64F1B47A982004865CB /* bg2.png */; };
 		63C2D6531B47AAF4004865CB /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C2D6521B47AAF4004865CB /* man.png */; };
 		873E76771B6351CD003DD8AF /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873E76761B6351CD003DD8AF /* Obstacle.swift */; };
+		873E76791B63555F003DD8AF /* Cactus.png in Resources */ = {isa = PBXBuildFile; fileRef = 873E76781B63555F003DD8AF /* Cactus.png */; };
 		87EE230C1B61E86B002CB46C /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EE230B1B61E86B002CB46C /* Hero.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		63C2D64F1B47A982004865CB /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 		63C2D6521B47AAF4004865CB /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
 		873E76761B6351CD003DD8AF /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		873E76781B63555F003DD8AF /* Cactus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cactus.png; sourceTree = "<group>"; };
 		87EE230B1B61E86B002CB46C /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 			children = (
 				63C2D64E1B47A982004865CB /* bg1.png */,
 				63C2D64F1B47A982004865CB /* bg2.png */,
+				873E76781B63555F003DD8AF /* Cactus.png */,
 				63C2D6521B47AAF4004865CB /* man.png */,
 			);
 			name = Images;
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873E76791B63555F003DD8AF /* Cactus.png in Resources */,
 				63C2D6301B479293004865CB /* LaunchScreen.xib in Resources */,
 				63C2D62D1B479293004865CB /* Images.xcassets in Resources */,
 				63C2D6241B479293004865CB /* GameScene.sks in Resources */,
