@@ -46,8 +46,10 @@ class GameScene: SKScene {
     }
    
     override func update(currentTime: CFTimeInterval) {
-
         self.moveBackground()
+        if ( obstacle.checkBoundaries() ) {
+            NSLog("Remove from stack")
+        }
     }
 
     
