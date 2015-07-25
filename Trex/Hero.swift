@@ -14,8 +14,13 @@ class Hero: NSObject {
 
     init(spriteName: String){
         self.sprite = SKSpriteNode(imageNamed: spriteName)
+        sprite.physicsBody = SKPhysicsBody(texture: SKTexture(imageNamed: "man.png"), size: sprite.size)
+        if let physics = sprite.physicsBody{
+            physics.affectedByGravity = true
+            physics.dynamic = true
+            physics.allowsRotation = true
+        }
     }
-
     func jump() {
         let jumpUp = SKAction.moveToY(385, duration: 0.7)
 
