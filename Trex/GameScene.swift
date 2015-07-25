@@ -10,6 +10,7 @@ import SpriteKit
 let background1 = SKSpriteNode(imageNamed: "bg1")
 let background2 = SKSpriteNode(imageNamed: "bg2")
 let hero = Hero(spriteName: "man")
+let obstacle = Obstacle(spriteName: "Cactus")
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
@@ -36,7 +37,6 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-
         hero.jump()
     }
    
@@ -45,6 +45,7 @@ class GameScene: SKScene {
         self.moveBackground()
     }
 
+    
     func moveBackground() {
         background1.position = CGPointMake(background1.position.x - 5, background1.position.y)
         background2.position = CGPointMake(background2.position.x - 5, background2.position.y)

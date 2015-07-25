@@ -8,3 +8,20 @@
 
 import Foundation
 import SpriteKit
+
+class Obstacle: NSObject {
+    var sprite: SKSpriteNode!
+    
+    init(spriteName: String){
+        self.sprite = SKSpriteNode(imageNamed: spriteName)
+        self.sprite.physicsBody = SKPhysicsBody(texture: SKTexture(imageNamed: "Cactus.png"),size: self.sprite.size)
+        if let physics = self.sprite.physicsBody {
+            physics.affectedByGravity = false
+            physics.dynamic = true
+            physics.velocity = CGVectorMake(-300, 0)
+        }
+    }
+}
+
+
+
