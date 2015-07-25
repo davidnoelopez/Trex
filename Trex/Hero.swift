@@ -14,20 +14,19 @@ class Hero: NSObject {
 
     init(spriteName: String){
         self.sprite = SKSpriteNode(imageNamed: spriteName)
-        sprite.physicsBody = SKPhysicsBody(texture: SKTexture(imageNamed: "man.png"), size: sprite.size)
-        if let physics = sprite.physicsBody{
+        self.sprite.physicsBody = SKPhysicsBody(texture: SKTexture(imageNamed: spriteName), size: self.sprite.size)
+        if let physics = self.sprite.physicsBody{
             physics.affectedByGravity = true
             physics.dynamic = true
-            physics.allowsRotation = true
+            physics.allowsRotation = false
+            physics.linearDamping = 0.8
+            physics.categoryBitMask = 1
         }
     }
     func jump() {
-        let jumpUp = SKAction.moveToY(385, duration: 0.7)
-
-        self.sprite.runAction(jumpUp, completion: { () -> Void in
-            let jumpDown = SKAction.moveToY(185, duration: 0.8)
-            self.sprite.runAction(jumpDown)
-        })
+        if ( self.sprite.physicsBody!.resting ) {
+        }
+        self.sprite.physicsBody?.applyImpulse(CGVectorMake(0, 100), atPoint: CGPointZero)
     }
     
 }

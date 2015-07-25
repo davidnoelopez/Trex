@@ -28,6 +28,11 @@ class GameScene: SKScene {
         hero.sprite.position = CGPointMake(70, 185)
         hero.sprite.zPosition = 0
         self.addChild(hero.sprite)
+
+        let floor = Floor(kind: 1, location: CGPointMake(70, 70))
+        self.addChild(floor.sprite)
+
+        self.physicsWorld.gravity = CGVectorMake(0.0, -4.9)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
