@@ -21,6 +21,14 @@ class Obstacle: NSObject {
             physics.velocity = CGVectorMake(-300, 0)
         }
     }
+    
+    func checkBoundaries()->Bool{
+        if self.sprite.position.x < 0 {
+            self.sprite.removeFromParent()
+            return true
+        }
+        return false
+    }
 }
 
 
