@@ -10,7 +10,7 @@ import SpriteKit
 let background1 = SKSpriteNode(imageNamed: "bg1")
 let background2 = SKSpriteNode(imageNamed: "bg2")
 let hero = Hero(spriteName: "man")
-let obstacle = Obstacle(spriteName: "Cactus")
+var obstStack = [Obstacle]()
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
@@ -29,11 +29,6 @@ class GameScene: SKScene {
         hero.sprite.position = CGPointMake(70, 185)
         hero.sprite.zPosition = 0
         self.addChild(hero.sprite)
-        
-        obstacle.sprite.anchorPoint = CGPointZero
-        obstacle.sprite.position = CGPointMake(800, 185)
-        obstacle.sprite.zPosition = 0
-        self.addChild(obstacle.sprite)
 
         let floor = Floor(kind: 1, location: CGPointMake(70, 70))
         self.addChild(floor.sprite)
@@ -47,8 +42,13 @@ class GameScene: SKScene {
    
     override func update(currentTime: CFTimeInterval) {
         self.moveBackground()
-        if ( obstacle.checkBoundaries() ) {
-            NSLog("Remove from stack")
+        self.loadObstacles()
+        var deltaObst = 0
+        for index in 0...(obstStack.count - 1) {
+            if ( obstStack[index - deltaObst].checkBoundaries() ) {
+                obstStack.removeAtIndex(index - deltaObst)
+                deltaObst++
+            }
         }
     }
 
@@ -66,6 +66,19 @@ class GameScene: SKScene {
         {
             background2.position = CGPointMake(background1.position.x + background1.size.width, background2.position.y)
 
+        }
+    }
+
+    func loadObstacles() {
+        while ( obstStack.count < 2 ) {
+            var posx = CGFloat((obstStack.count + 1) * 400)
+            let obstacle = Obstacle(spriteName: "Cactus")
+            obstacle.sprite.anchorPoint = CGPointZero
+            obstacle.sprite.position = CGPointMake(posx, 185)
+            obstacle.sprite.zPosition = 0
+            self.addChild(obstacle.sprite)
+
+            obstStack.append(obstacle)
         }
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SpriteKit
 
 class Obstacle: NSObject {
     var sprite: SKSpriteNode!
@@ -30,6 +31,18 @@ class Obstacle: NSObject {
     }
 }
 
-
-
-import SpriteKit
+struct ObstacleStack {
+    var items = [Obstacle]()
+    mutating func push(item: Obstacle) {
+        items.append(item)
+    }
+    mutating func pop() -> Obstacle {
+        return items.removeLast()
+    }
+    mutating func pop(index: Int) -> Obstacle {
+        return items.removeAtIndex(index)
+    }
+    mutating func count() -> Int {
+        return items.count
+    }
+}
